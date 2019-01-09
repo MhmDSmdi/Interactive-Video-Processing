@@ -57,10 +57,30 @@ class ImageHandler:
         edges = cv2.Canny(self.image, 100, 200)
         self.show_image(edges, "Edges of Image")
 
+    def show_segmented_image(self):
+        gray = cv2.cvtColor(self.image, cv2.COLOR_BGR2GRAY)
+        ret, th1 = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+        th3 = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+        self.show_image(th3)
+
+    def show_faces_image(self):
+        face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+        eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+        gray = cv2.cvtColor(self.image, cv2.COLOR_BGR2GRAY)
+        faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+        for (x, y, w, h) in faces:
+            cv2.rectangle(self.image, (x, y), (x + w, y + h), (255, 0, 0), 2)
+            roi_gray = gray[y:y + h, x:x + w]
+            roi_color = self.image[y:y + h, x:x + w]
+            eyes = eye_cascade.detectMultiScale(roi_gray)
+            for (ex, ey, ew, eh) in eyes:
+                cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)
+        self.show_image(self.image)
+
     def get_key(self, prompt):
         return input(prompt)
 
 
 if __name__ == '__main__':
     imageHandler = ImageHandler()
-    imageHandler.show_edges_image()
+    imageHandler.show_faces_image()
