@@ -1,5 +1,7 @@
 import numpy as np
+import math
 import cv2
+
 
 
 class ImageHandler:
@@ -47,10 +49,18 @@ class ImageHandler:
         dst = cv2.warpAffine(self.image, M, (cols, rows))
         self.show_image(dst, str(angel) + " Rotation")
 
+    def show_resize_image(self, width_scale=0.5, height_scale=1):
+        resize_image = cv2.resize(self.image, (math.ceil(width_scale * self.image.shape[1]), math.ceil(height_scale * self.image.shape[0])), interpolation=cv2.INTER_LINEAR)
+        self.show_image(resize_image, "Image Resize with vector[{}, {}]".format(width_scale, height_scale))
+
+    def show_edges_image(self):
+        edges = cv2.Canny(self.image, 100, 200)
+        self.show_image(edges, "Edges of Image")
+
     def get_key(self, prompt):
         return input(prompt)
 
 
 if __name__ == '__main__':
     imageHandler = ImageHandler()
-
+    imageHandler.show_edges_image()
