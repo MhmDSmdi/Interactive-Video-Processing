@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f20702e7-9f3a-4e16-a728-0df1de6b91ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/handler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Image_Processing$handler.coverage" NAME="handler Coverage Results" MODIFIED="1547056856353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Image_Processing$handler.coverage" NAME="handler Coverage Results" MODIFIED="1547058630057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-374560282">
@@ -23,26 +24,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="jpg" value="1" />
+          <entry key="jpg" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="1" />
+          <entry key="py" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="1" />
+          <entry key="Image" value="2" />
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="1" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1898" />
+          <entry key="py" value="1995" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1898" />
+          <entry key="Python" value="1995" />
         </counts>
       </usages-collector>
     </session>
@@ -52,16 +53,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+            <state relative-caret-position="280">
+              <caret line="72" column="77" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="77" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1547057021467" expanded="true" signature="64:3099" ph="..." />
-                <marker date="1547057021467" expanded="true" signature="181:239" ph="..." />
-                <marker date="1547057021467" expanded="true" signature="1270:1279" ph="..." />
-                <marker date="1547057021467" expanded="true" signature="1566:1575" ph="..." />
-                <marker date="1547057021467" expanded="true" signature="3036:3041" ph="..." />
-                <marker date="1547057021467" expanded="true" signature="3236:3237" ph="..." />
+                <marker date="1547058635080" expanded="true" signature="63:2955" ph="..." />
+                <marker date="1547058635080" expanded="true" signature="186:244" ph="..." />
+                <marker date="1547058635080" expanded="true" signature="1275:1284" ph="..." />
+                <marker date="1547058635080" expanded="true" signature="1571:1580" ph="..." />
+                <marker date="1547058635080" expanded="true" signature="2892:2897" ph="..." />
               </folding>
             </state>
           </provider>
@@ -231,18 +231,30 @@
     <entry file="file://$PROJECT_DIR$/test.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1247971763/cv2/cv2/CascadeClassifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#188#287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/face.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+        <state relative-caret-position="280">
+          <caret line="72" column="77" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="77" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1547057021467" expanded="true" signature="64:3099" ph="..." />
-            <marker date="1547057021467" expanded="true" signature="181:239" ph="..." />
-            <marker date="1547057021467" expanded="true" signature="1270:1279" ph="..." />
-            <marker date="1547057021467" expanded="true" signature="1566:1575" ph="..." />
-            <marker date="1547057021467" expanded="true" signature="3036:3041" ph="..." />
-            <marker date="1547057021467" expanded="true" signature="3236:3237" ph="..." />
+            <marker date="1547058635080" expanded="true" signature="63:2955" ph="..." />
+            <marker date="1547058635080" expanded="true" signature="186:244" ph="..." />
+            <marker date="1547058635080" expanded="true" signature="1275:1284" ph="..." />
+            <marker date="1547058635080" expanded="true" signature="1571:1580" ph="..." />
+            <marker date="1547058635080" expanded="true" signature="2892:2897" ph="..." />
           </folding>
         </state>
       </provider>

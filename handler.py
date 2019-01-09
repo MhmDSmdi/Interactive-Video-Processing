@@ -3,9 +3,8 @@ import math
 import cv2
 
 
-
 class ImageHandler:
-    IMAGE_ADDRESS = "test.jpg"
+    IMAGE_ADDRESS = "multi_face.jpg"
     VIDEO_ADDRESS = "test.avi"
     image, video = None, None
 
@@ -50,7 +49,9 @@ class ImageHandler:
         self.show_image(dst, str(angel) + " Rotation")
 
     def show_resize_image(self, width_scale=0.5, height_scale=1):
-        resize_image = cv2.resize(self.image, (math.ceil(width_scale * self.image.shape[1]), math.ceil(height_scale * self.image.shape[0])), interpolation=cv2.INTER_LINEAR)
+        resize_image = cv2.resize(self.image, (
+        math.ceil(width_scale * self.image.shape[1]), math.ceil(height_scale * self.image.shape[0])),
+                                  interpolation=cv2.INTER_LINEAR)
         self.show_image(resize_image, "Image Resize with vector[{}, {}]".format(width_scale, height_scale))
 
     def show_edges_image(self):
@@ -64,17 +65,12 @@ class ImageHandler:
         self.show_image(th3)
 
     def show_faces_image(self):
-        face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-        eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+        face_cascade = cv2.CascadeClassifier('/home/mhmd/anaconda3/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml')
+        eye_cascade = cv2.CascadeClassifier('/home/mhmd/anaconda3/share/OpenCV/haarcascades/haarcascade_eye.xml')
         gray = cv2.cvtColor(self.image, cv2.COLOR_BGR2GRAY)
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
         for (x, y, w, h) in faces:
             cv2.rectangle(self.image, (x, y), (x + w, y + h), (255, 0, 0), 2)
-            roi_gray = gray[y:y + h, x:x + w]
-            roi_color = self.image[y:y + h, x:x + w]
-            eyes = eye_cascade.detectMultiScale(roi_gray)
-            for (ex, ey, ew, eh) in eyes:
-                cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 2)
         self.show_image(self.image)
 
     def get_key(self, prompt):
@@ -84,3 +80,4 @@ class ImageHandler:
 if __name__ == '__main__':
     imageHandler = ImageHandler()
     imageHandler.show_faces_image()
+    # imageHandler.show_segmented_image()
