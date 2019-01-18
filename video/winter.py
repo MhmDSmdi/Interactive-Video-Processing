@@ -68,7 +68,6 @@ def remove_out_of_bound():
         if not snow.valid:
             snows.remove(snow)
 
-
 while (1):
     generate_snow()
     remove_out_of_bound()
