@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f20702e7-9f3a-4e16-a728-0df1de6b91ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video/ball_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/ball_game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/winter.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/winter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Image_Processing$handler.coverage" NAME="handler Coverage Results" MODIFIED="1547060065584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Image_Processing$ball_game.coverage" NAME="ball_game Coverage Results" MODIFIED="1547846878084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/video" />
+    <SUITE FILE_PATH="coverage/Image_Processing$ball_game.coverage" NAME="ball_game Coverage Results" MODIFIED="1547847831444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/video" />
     <SUITE FILE_PATH="coverage/Image_Processing$main.coverage" NAME="main Coverage Results" MODIFIED="1547843440281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/video" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -44,13 +44,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="py" value="3103" />
+          <entry key="py" value="3132" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="3103" />
+          <entry key="Python" value="3132" />
         </counts>
       </usages-collector>
     </session>
@@ -72,13 +72,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/video/ball_game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="53" selection-end-column="18" />
+            <state relative-caret-position="234">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1547846826044" expanded="true" signature="764:795" ph="..." />
-                <marker date="1547846826044" expanded="true" signature="2305:2310" ph="..." />
-                <marker date="1547846826044" expanded="true" signature="2544:2549" ph="..." />
+                <marker date="1547847686375" expanded="true" signature="763:794" ph="..." />
+                <marker date="1547847686375" expanded="true" signature="2165:2170" ph="..." />
+                <marker date="1547847686375" expanded="true" signature="2404:2409" ph="..." />
               </folding>
             </state>
           </provider>
@@ -356,13 +356,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/video/ball_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="53" selection-end-column="18" />
+        <state relative-caret-position="234">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1547846826044" expanded="true" signature="764:795" ph="..." />
-            <marker date="1547846826044" expanded="true" signature="2305:2310" ph="..." />
-            <marker date="1547846826044" expanded="true" signature="2544:2549" ph="..." />
+            <marker date="1547847686375" expanded="true" signature="763:794" ph="..." />
+            <marker date="1547847686375" expanded="true" signature="2165:2170" ph="..." />
+            <marker date="1547847686375" expanded="true" signature="2404:2409" ph="..." />
           </folding>
         </state>
       </provider>
