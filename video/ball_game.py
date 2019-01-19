@@ -4,8 +4,9 @@ import random
 
 img_ball = cv.imread("ball.jpg")
 img_ball = cv.resize(img_ball, (50, 50), interpolation=cv.INTER_AREA)
+print(img_ball.shape)
 fgtersh = 127
-capture = cv.VideoCapture("test.mp4")
+capture = cv.VideoCapture(0)
 fgbg = cv.createBackgroundSubtractorMOG2()
 _, frame = capture.read()
 video_size = frame.shape
@@ -26,43 +27,42 @@ def paste_image(background, forground, loc):
 
 
 class Ball:
-    speed = 1
     valid = True
 
     def __init__(self, pos):
         self.pos = pos
 
-    def _move(self, dx, dy):
+    def _move(self, dx, dy, speed):
         # UP
         if dx == 0 and dy == 1:
-            self.pos[0] -= self.speed
+            self.pos[0] -= speed
         # DOWN
         elif dx == 0 and dy == -1:
-            self.pos[0] += self.speed
+            self.pos[0] += speed
         # LEFT
         elif dx == -1 and dy == 0:
-            self.pos[1] -= self.speed
+            self.pos[1] -= speed
         # RIGHT
         elif dx == 1 and dy == 0:
-            self.pos[1] += self.speed
+            self.pos[1] += speed
 
     def check_status(self, mask):
-        for i in range(self.speed):
-            for j in range(img_ball.shape[1]):
-                cv.imshow("mask", mask)
-                print(fgtersh < mask[self.pos[0] + img_ball.shape[0] + i][self.pos[1] + j])
-                if fgtersh < mask[self.pos[0] + img_ball.shape[0] + i][self.pos[1] + j]:
-                    self._move(0, 1)
-                    print("BALL Most GO UP")
-                elif fgtersh < mask[self.pos[0] - img_ball.shape[0] + i][self.pos[1] + j]:
-                    self._move(0, -1)
-                    print("BALL Most GO DOWN")
-                elif fgtersh < mask[self.pos[0] + i][self.pos[1] + img_ball.shape[1] + j]:
-                    self._move(-1, 0)
-                    print("BALL Most GO LEFT")
-                elif fgtersh < mask[self.pos[0] + i][self.pos[1] - img_ball.shape[1] + j]:
-                    self._move(1, 0)
-                    print("BALL Most GO RIGHT")
+        cv.imshow("mask", mask)
+        for i in range(img_ball.shape[1]):
+            if fgtersh < mask[self.pos[0] + img_ball.shape[0]][self.pos[1] + i]:
+                self._move(0, 1, 1)
+                print("BALL Most GO UP")
+            if fgtersh < mask[self.pos[0] - img_ball.shape[0]][self.pos[1] + i]:
+                self._move(0, -1, 1)
+                print("BALL Most GO DOWN")
+
+        for j in range(img_ball.shape[0]):
+            if fgtersh < mask[self.pos[0] + j][self.pos[1] + img_ball.shape[1]]:
+                self._move(-1, 0, 1)
+                print("BALL Most GO LEFT")
+            if fgtersh < mask[self.pos[0] + j][self.pos[1] - img_ball.shape[1]]:
+                self._move(1, 0, 1)
+                print("BALL Most GO RIGHT")
 
 
 def init_balls():
