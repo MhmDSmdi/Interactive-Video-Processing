@@ -2,8 +2,6 @@ import cv2 as cv
 
 img_ball = cv.imread("ball.png")
 img_ball = cv.resize(img_ball, (50, 50), interpolation=cv.INTER_AREA)
-cv.imshow("Ball", img_ball)
-print(img_ball.shape)
 fgtersh = 127
 capture = cv.VideoCapture(0)
 fgbg = cv.createBackgroundSubtractorMOG2()
