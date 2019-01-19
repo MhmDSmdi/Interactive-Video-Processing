@@ -28,41 +28,52 @@ def paste_image(background, forground, loc):
 
 class Ball:
     valid = True
+    base_speed = 8
 
     def __init__(self, pos):
         self.pos = pos
 
-    def _move(self, dx, dy, speed):
+    def _move(self, dx, dy, coefficient):
         # UP
-        if dx == 0 and dy == 1:
-            self.pos[0] -= speed
+        if dx == 0 and dy == 1 and (self.pos[0] - coefficient * self.base_speed) > self.base_speed:
+            self.pos[0] -= coefficient * self.base_speed
         # DOWN
-        elif dx == 0 and dy == -1:
-            self.pos[0] += speed
+        elif dx == 0 and dy == -1 and ((self.pos[0] + img_ball.shape[0]) + coefficient * self.base_speed) < video_size[0] - self.base_speed:
+            self.pos[0] += coefficient * self.base_speed
         # LEFT
-        elif dx == -1 and dy == 0:
-            self.pos[1] -= speed
+        elif dx == -1 and dy == 0 and (self.pos[1] - coefficient * self.base_speed) > self.base_speed:
+            self.pos[1] -= coefficient * self.base_speed
         # RIGHT
-        elif dx == 1 and dy == 0:
-            self.pos[1] += speed
+        elif dx == 1 and dy == 0 and ((self.pos[1] + img_ball.shape[1]) + coefficient * self.base_speed) < video_size[1] - self.base_speed:
+            self.pos[1] += coefficient * self.base_speed
 
     def check_status(self, mask):
         cv.imshow("mask", mask)
-        for i in range(img_ball.shape[1]):
-            if fgtersh < mask[self.pos[0] + img_ball.shape[0]][self.pos[1] + i]:
-                self._move(0, 1, 1)
-                print("BALL Most GO UP")
-            if fgtersh < mask[self.pos[0] - img_ball.shape[0]][self.pos[1] + i]:
-                self._move(0, -1, 1)
-                print("BALL Most GO DOWN")
+        try:
+            for i in range(img_ball.shape[1]):
+                if fgtersh < mask[self.pos[0] + img_ball.shape[0]][self.pos[1] + i]:
+                    coefficient = (mask[self.pos[0] + img_ball.shape[0]][self.pos[1] + i])
+                    print(coefficient)
+                    self._move(0, 1, 1)
+                    # print("BALL Most GO UP")
+                if fgtersh < mask[self.pos[0] - img_ball.shape[0]][self.pos[1] + i]:
+                    # coefficient = mask[self.pos[0] - img_ball.shape[0]][self.pos[1] + i] / 255
+                    self._move(0, -1, 1)
+                    # print("BALL Most GO DOWN")
 
-        for j in range(img_ball.shape[0]):
-            if fgtersh < mask[self.pos[0] + j][self.pos[1] + img_ball.shape[1]]:
-                self._move(-1, 0, 1)
-                print("BALL Most GO LEFT")
-            if fgtersh < mask[self.pos[0] + j][self.pos[1] - img_ball.shape[1]]:
-                self._move(1, 0, 1)
-                print("BALL Most GO RIGHT")
+            for j in range(img_ball.shape[0]):
+                if fgtersh < mask[self.pos[0] + j][self.pos[1] - img_ball.shape[1]]:
+                    # coefficient = mask[self.pos[0] + j][self.pos[1] - img_ball.shape[1]] / 255
+                    self._move(1, 0, 1)
+                    # print("BALL Most GO RIGHT")
+
+                if fgtersh < mask[self.pos[0] + j][self.pos[1] + img_ball.shape[1]]:
+                    # coefficient = mask[self.pos[0] + j][self.pos[1] + img_ball.shape[1]] / 255
+                    self._move(-1, 0, 1)
+                    # print("BALL Most GO LEFT")
+
+        except:
+            pass
 
 
 def init_balls():
