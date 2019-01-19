@@ -9,7 +9,8 @@ img_ball = cv.resize(img_ball, (80, 80), interpolation=cv.INTER_AREA)
 
 img_bomb = cv.imread("bomb.png")
 img_bomb = cv.resize(img_bomb, (80, 80), interpolation=cv.INTER_AREA)
-
+cv.imshow("bomb", img_bomb)
+cv.imshow("ball", img_ball)
 capture = cv.VideoCapture(0)
 fgbg = cv.createBackgroundSubtractorMOG2()
 _, frame = capture.read()
@@ -25,9 +26,9 @@ lost_ball = 3
 def paste_image(background, forground, loc):
     for i in range(forground.shape[1]):
         for j in range(forground.shape[0]):
-            if not (forground[i][j][2] == 0 and forground[i][j][1] == 0 and forground[i][j][0] == 0):
+            if forground[i][j][2] != 0 and forground[i][j][1] != 0 and forground[i][j][0] != 0:
                 try:
-                    background[j + loc[0] - 1][i + loc[1] - 1] = forground[j, i]
+                        background[j + loc[0] - 1][i + loc[1] - 1] = forground[j, i]
                 except:
                     pass
 
@@ -36,13 +37,7 @@ def paste_image(background, forground, loc):
 
 def init_items():
     pos = [video_size[0], 382]
-    items.append(AnimatedObject(pos, vy=-1, vx=1, ac=0.025))
-    pos = [video_size[0], 100]
-    items.append(AnimatedObject(pos, vy=-1.15, vx=1, ac=0.025))
-    pos = [video_size[0], 250]
-    items.append(AnimatedObject(pos, vy=-1.18, vx=2, ac=0.025))
-    pos = [video_size[0], 290]
-    items.append(AnimatedObject(pos, vy=-0.95, vx=2, ac=0.025))
+    items.append(Ball(5, pos, -2, 1, 0.07, img_ball))
 
 
 def remove_invalid_items():
@@ -53,13 +48,13 @@ def remove_invalid_items():
 
 def generate_item():
     for i in range(random.choice(range(0, 3))):
-        bomb_chance = random.choice(range(0, 2))
+        bomb_chance = random.choice(range(0, 10))
         xrnd = random.choice(range(0, 7))
         vy = random.choice(range(90, 115)) / -100
         vx = random.choice(range(0, 2))
         ac = random.choice(range(18, 25)) / 1000
         pos = [video_size[0], xrnd * 80]
-        if bomb_chance == 0:
+        if bomb_chance != 1:
             items.append(Ball(5, pos, vy, vx, ac, img_ball))
         else:
             items.append(Bomb(pos, vy, vx, ac, img_bomb))
@@ -84,8 +79,9 @@ class AnimatedObject:
         self.pos[1] += self.vx
         if self.pos[0] > video_size[0] or self.pos[0] < 0 or self.pos[1] > video_size[1] or self.pos[1] < 0:
             self.valid = False
-            global lost_ball
-            lost_ball -= 1
+            if self.type == 0:
+                global lost_ball
+                lost_ball -= 1
         self.time += 1
 
     def on_item_touched(self):
@@ -123,9 +119,7 @@ class Bomb(AnimatedObject):
         super().__init__(pos, vy, vx, ac, img, 1)
 
     def on_item_touched(self):
-        print("23wde")
-        exit(0)
-
+        print("BOMMMB TUCHED")
 
 while 1:
     remove_invalid_items()
@@ -139,9 +133,9 @@ while 1:
         item.check_status(fgmask)
         im = paste_image(im, item.img, item.pos)
     font = cv.FONT_HERSHEY_SIMPLEX
-    cv.putText(frame, 'SCORE', (87, 100), font, 4, (14, 0, 41), 2, cv.LINE_AA)
+    cv.putText(frame, 'SCORE: ' + str(total_score), (10, 40), font, 1, (0, 200, 0), 2, cv.LINE_AA)
+    cv.putText(frame, 'LOST: ' + str(lost_ball), (480, 40), font, 1, (0, 0, 200), 2, cv.LINE_AA)
     cv.imshow('frame', frame)
-
     out.write(frame)
     k = cv.waitKey(1) & 0xff
     if k == 27:
