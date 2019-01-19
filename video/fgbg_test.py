@@ -2,11 +2,14 @@ import cv2 as cv
 
 img_ball = cv.imread("ball.png")
 img_ball = cv.resize(img_ball, (50, 50), interpolation=cv.INTER_AREA)
-fgtersh = 127
+fgtersh = 240
 capture = cv.VideoCapture(0)
 fgbg = cv.createBackgroundSubtractorMOG2()
 _, frame = capture.read()
 video_size = frame.shape
+
+fourcc = cv.VideoWriter_fourcc(*'XVID')
+out = cv.VideoWriter('output.avi',fourcc, 20.0, (640, 480))
 
 balls = []
 
@@ -45,7 +48,7 @@ class Ball:
             self.pos[1] += coefficient * self.base_speed
 
     def check_status(self, mask):
-        cv.imshow("mask", mask)
+        # cv.imshow("mask", mask)
         try:
             for i in range(img_ball.shape[1]):
                 if fgtersh < mask[self.pos[0] + img_ball.shape[0]][self.pos[1] + i]:
@@ -91,15 +94,19 @@ init_balls()
 while (1):
     #remove_invalid_img()
     ret, frame = capture.read()
+    # if ret:
+    #     frame = cv.flip(frame, 0)
     fgmask = fgbg.apply(frame)
     im = frame
     for ball in balls:
         im = paste_image(im, img_ball, ball.pos)
     cv.imshow('frame', im)
+    out.write(frame)
     k = cv.waitKey(1) & 0xff
     if k == 27:
         break
     for ball in balls:
         ball.check_status(fgmask)
+out.release()
 capture.release()
 cv.destroyAllWindows()
