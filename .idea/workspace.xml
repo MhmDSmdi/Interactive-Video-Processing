@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f20702e7-9f3a-4e16-a728-0df1de6b91ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/video/fgbg_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/gif_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/ball.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/video/ball.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video/ball_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/ball_game.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +17,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Image_Processing$handler.coverage" NAME="handler Coverage Results" MODIFIED="1547060065584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Image_Processing$ball_game.coverage" NAME="ball_game Coverage Results" MODIFIED="1547883697987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/video" />
+    <SUITE FILE_PATH="coverage/Image_Processing$ball_game.coverage" NAME="ball_game Coverage Results" MODIFIED="1547887822608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/video" />
+    <SUITE FILE_PATH="coverage/Image_Processing$gif_test.coverage" NAME="gif_test Coverage Results" MODIFIED="1547888041911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/video" />
     <SUITE FILE_PATH="coverage/Image_Processing$main.coverage" NAME="main Coverage Results" MODIFIED="1547843440281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/video" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -27,55 +33,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="jpg" value="6" />
+          <entry key="gif" value="1" />
+          <entry key="jpg" value="8" />
           <entry key="md" value="1" />
-          <entry key="png" value="1" />
-          <entry key="py" value="5" />
+          <entry key="png" value="3" />
+          <entry key="py" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="7" />
+          <entry key="Image" value="12" />
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="5" />
+          <entry key="Python" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="py" value="3558" />
+          <entry key="py" value="3875" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="3558" />
+          <entry key="Python" value="3875" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/video/winter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="61" column="61" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/video/ball_game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="62" column="46" lean-forward="true" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
-              <folding>
-                <marker date="1547883585155" expanded="true" signature="1683:1692" ph="..." />
-              </folding>
+            <state relative-caret-position="18">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -98,6 +90,8 @@
         <option value="$PROJECT_DIR$/handler.py" />
         <option value="$PROJECT_DIR$/video/main.py" />
         <option value="$PROJECT_DIR$/video/winter.py" />
+        <option value="$PROJECT_DIR$/video/gif_test.py" />
+        <option value="$PROJECT_DIR$/video/fgbg_test.py" />
         <option value="$PROJECT_DIR$/video/ball_game.py" />
       </list>
     </option>
@@ -169,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ball_game">
+  <component name="RunManager" selected="Python.gif_test">
     <configuration name="ball_game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Image-Processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,6 +178,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video/ball_game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gif_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Image-Processing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/video" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video/gif_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,9 +256,11 @@
       <item itemvalue="Python.handler" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.ball_game" />
+      <item itemvalue="Python.gif_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.gif_test" />
         <item itemvalue="Python.ball_game" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.handler" />
@@ -266,12 +284,12 @@
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,21 +352,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/video/winter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="61" column="61" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="61" />
+        <state relative-caret-position="72">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/video/ball.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/bomb.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/bomb.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/gif_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/fgbg_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/video/ball_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="62" column="46" lean-forward="true" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
-          <folding>
-            <marker date="1547883585155" expanded="true" signature="1683:1692" ph="..." />
-          </folding>
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
