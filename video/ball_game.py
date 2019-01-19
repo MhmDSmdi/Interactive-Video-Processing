@@ -1,5 +1,7 @@
 import cv2 as cv
 import time
+import math
+import random
 
 img_ball = cv.imread("ball.png")
 img_ball = cv.resize(img_ball, (80, 80), interpolation=cv.INTER_AREA)
@@ -9,7 +11,7 @@ capture = cv.VideoCapture(0)
 fgbg = cv.createBackgroundSubtractorMOG2()
 _, frame = capture.read()
 video_size = frame.shape
-
+print(video_size)
 items = []
 
 
@@ -29,63 +31,82 @@ class AnimatedObject:
     valid = True
     base_speed = 1
 
-    def __init__(self, pos, v0, ac, imgtype=0):
+    def __init__(self, pos, vy, vx, ac, imgtype=0):
         self.pos = pos
         self.type = type
         self.ac = ac
-        self.v0 = v0
+        self.vy = vy
+        self.vx = vx
 
-    # def _move(self, dx, dy, coefficient):
-    #     # UP
-    #     if dx == 0 and dy == 1 and (self.pos[0] - coefficient * self.base_speed) > self.base_speed:
-    #         self.pos[0] -= coefficient * self.base_speed
-    #     # DOWN
-    #     elif dx == 0 and dy == -1 and ((self.pos[0] + self.img.shape[0]) + coefficient * self.base_speed) < video_size[
-    #         0] - self.base_speed:
-    #         self.pos[0] += coefficient * self.base_speed
-    #     # LEFT
-    #     elif dx == -1 and dy == 0 and (self.pos[1] - coefficient * self.base_speed) > self.base_speed:
-    #         self.pos[1] -= coefficient * self.base_speed
-    #     # RIGHT
-    #     elif dx == 1 and dy == 0 and ((self.pos[1] + self.img.shape[1]) + coefficient * self.base_speed) < video_size[
-    #         1] - self.base_speed:
-    #         self.pos[1] += coefficient * self.base_speed
-    #
-    def throw(self):
-        # H = video_size[0] - (v0 ** 2) / (2 * ac)
-        # self.pos[0] = video_size[0]
-        # while H != h:
-        #     # v = v0 - ac
-        #     h -= 1
-        #     self.pos[0] = h
-        # while h != video_size[0]:
-        #     h += 1
-        #     self.pos[0] = h
-        t = 1
-        y0 = self.pos[0]
-        self.pos[0] = -0.5 * self.ac * (t ** 2) - self.v0 * t + y0
-        print(self.pos[0], self.pos[1])
-        time.sleep(0.01)
-        t += 1
+    def throw(self, t):
+        v = self.vy + self.ac * t
+        self.pos[0] += math.ceil(v * t)
+        self.pos[1] += self.vx
+        if self.pos[0] > video_size[0] or self.pos[0] < 0 or self.pos[1] > video_size[1] or self.pos[1] < 0:
+            self.valid = False
+
+    def check_status(self, mask):
+        try:
+            for i in range(img_ball.shape[1]):
+                if fgtersh < mask[self.pos[0] + img_ball.shape[0]][self.pos[1] + i]:
+                    self.valid = False
+                if fgtersh < mask[self.pos[0] - img_ball.shape[0]][self.pos[1] + i]:
+                    self.valid = False
+            for j in range(img_ball.shape[0]):
+                if fgtersh < mask[self.pos[0] + j][self.pos[1] - img_ball.shape[1]]:
+                    self.valid = False
+                if fgtersh < mask[self.pos[0] + j][self.pos[1] + img_ball.shape[1]]:
+                    self.valid = False
+        except:
+            pass
 
 
 def init_items():
     pos = [video_size[0], 382]
-    items.append(AnimatedObject(pos, 1, 1))
+    items.append(AnimatedObject(pos, vy=-1, vx=1, ac=0.025))
+    pos = [video_size[0], 100]
+    items.append(AnimatedObject(pos, vy=-1.15, vx=1, ac=0.025))
+    pos = [video_size[0], 250]
+    items.append(AnimatedObject(pos, vy=-1.18, vx=2, ac=0.025))
+    pos = [video_size[0], 290]
+    items.append(AnimatedObject(pos, vy=-0.95, vx=2, ac=0.025))
 
 
-init_items()
-while (1):
+def remove_invalid_items():
+    for item in items:
+        if not item.valid:
+            items.remove(item)
+
+
+def generate_item():
+    # rnd = random.choice(range(0, 2))
+    # if rnd = 1:
+    #
+    # else:
+    for i in range(random.choice(range(0, 5))):
+        xrnd = random.choice(range(0, 7))
+        pos = [video_size[0], xrnd * 80]
+        items.append(AnimatedObject(pos, vy=-1.15, vx=2, ac=0.025))
+
+
+#init_items()
+t = 1
+while 1:
+    remove_invalid_items()
     ret, frame = capture.read()
     fgmask = fgbg.apply(frame)
+    print(len(items))
+    if len(items) < 10:
+        generate_item()
     im = frame
     for item in items:
+        item.throw(t)
+        item.check_status(fgmask)
         im = paste_image(im, img_ball, item.pos)
     cv.imshow('frame', frame)
     k = cv.waitKey(1) & 0xff
     if k == 27:
         break
-    for item in items:
-        item.throw()
+    t += 1
 capture.release()
 cv.destroyAllWindows()
