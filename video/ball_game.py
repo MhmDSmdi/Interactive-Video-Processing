@@ -26,9 +26,9 @@ lost_ball = 3
 def paste_image(background, forground, loc):
     for i in range(forground.shape[1]):
         for j in range(forground.shape[0]):
-            if forground[i][j][2] != 0 and forground[i][j][1] != 0 and forground[i][j][0] != 0:
+           # if forground[i][j][2] != 0 and forground[i][j][1] != 0 and forground[i][j][0] != 0:
                 try:
-                        background[j + loc[0] - 1][i + loc[1] - 1] = forground[j, i]
+                    background[j + loc[0] - 1][i + loc[1] - 1] = forground[j, i]
                 except:
                     pass
 
@@ -50,8 +50,8 @@ def generate_item():
     for i in range(random.choice(range(0, 3))):
         bomb_chance = random.choice(range(0, 10))
         xrnd = random.choice(range(0, 7))
-        vy = random.choice(range(90, 115)) / -100
-        vx = random.choice(range(0, 2))
+        vy = random.choice(range(90, 110)) / -100
+        vx = random.choice(range(-2, 2))
         ac = random.choice(range(18, 25)) / 1000
         pos = [video_size[0], xrnd * 80]
         if bomb_chance != 1:
@@ -120,6 +120,7 @@ class Bomb(AnimatedObject):
 
     def on_item_touched(self):
         print("BOMMMB TUCHED")
+
 
 while 1:
     remove_invalid_items()
