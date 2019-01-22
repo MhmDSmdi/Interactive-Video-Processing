@@ -99,14 +99,11 @@ class ImageHandler:
     # j
     def show_frame(self, num):
         cap = cv2.VideoCapture(self.VIDEO_ADDRESS)
-        frame_rate = cap.get(5)
         for i in range(num):
-            frame_id = cap.get(1)
             _, frame = cap.read()
             frame = cv2.resize(frame, (600, 600), interpolation=cv2.INTER_LINEAR)
-            cv2.imshow("Frame " + str(i), frame)
-            import time
-            time.sleep(1)
+            cv2.imshow("Frame " + str(i + 1), frame)
+            cv2.waitKey(500)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
         cap.release()

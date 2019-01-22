@@ -5,7 +5,7 @@ import cv2 as cv
 
 FOREGROUND_THRESHOLD = 127
 cap = cv.VideoCapture(0)
-fgbg = cv.createBackgroundSubtractorKNN(0, 10, False)
+fgbg = cv.createBackgroundSubtractorKNN(0, 2, False)
 _, frame = cap.read()
 vid_size = frame.shape
 
@@ -18,7 +18,7 @@ snows = []
 
 
 class Snow:
-    speed = 5
+    speed = 4
     valid = True
 
     def __init__(self, position):
@@ -71,12 +71,11 @@ while 1:
     generate_snow()
     remove_out_of_bound()
     ret, frame = cap.read()
+    im = frame
+    frame = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
     fgmask = fgbg.apply(frame)
     fgmask = cv.GaussianBlur(fgmask, (15, 15), 0)
-    gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-    ret, thresh = cv.threshold(gray, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU)
-    cv.imshow("thresh", thresh)
-    im = frame
+    ret, thresh = cv.threshold(fgmask, 0, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)
     for snow in snows:
         im = draw_snow(snow.position, im)
     cv.imshow('frame', im)
