@@ -26,10 +26,3 @@ def show_gif(file_name):
         i = (i + 1) % nums
     cv2.destroyAllWindows()
 
-
-def proper_image(image):
-    for j in range(image.shape[0]):
-        for i in range(image.shape[1]):
-            if image[j][i][2] != 0 and image[j][i][1] != 0 and image[j][i][0] != 0:
-                proper_image('')
-    return image

@@ -2,18 +2,21 @@ import cv2 as cv
 import time
 import math
 import random
+import datetime
 
-img_ball = cv.imread("ball.png")
+img_ball = cv.imread("assets/ball.png")
 img_ball = cv.resize(img_ball, (60, 60), interpolation=cv.INTER_AREA)
 
-img_bomb = cv.imread("bomb.png")
+img_bomb = cv.imread("assets/bomb.png")
 img_bomb = cv.resize(img_bomb, (80, 80), interpolation=cv.INTER_AREA)
 
 capture = cv.VideoCapture(0)
 fgbg = cv.createBackgroundSubtractorMOG2()
 _, frame = capture.read()
 fourcc = cv.VideoWriter_fourcc(*'MP4V')
-out = cv.VideoWriter('ball_game.mp4', fourcc, 20.0, (640, 480))
+out = cv.VideoWriter(
+    'out/ball_game_' + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d-%H%M%S') + '.mp4', fourcc, 20.0,
+    (640, 480))
 
 video_size = frame.shape
 fgtersh = 240
@@ -48,7 +51,7 @@ def remove_invalid_items():
 
 def game_over():
     global is_game_finish, num_lost_ball, total_score
-    #is_game_finish = True
+    # is_game_finish = True
     print("Your Score : " + str(total_score))
 
 

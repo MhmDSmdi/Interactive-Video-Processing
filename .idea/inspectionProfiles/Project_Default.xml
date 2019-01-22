@@ -6,6 +6,8 @@
         <list>
           <option value="E501" />
           <option value="W391" />
+          <option value="E722" />
+          <option value="E125" />
         </list>
       </option>
     </inspection_tool>
