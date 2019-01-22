@@ -5,7 +5,7 @@ import cv2 as cv
 
 FOREGROUND_THRESHOLD = 127
 cap = cv.VideoCapture(0)
-fgbg = cv.createBackgroundSubtractorKNN(0, 2, False)
+fgbg = cv.createBackgroundSubtractorKNN(255, 20, False)
 _, frame = cap.read()
 vid_size = frame.shape
 
@@ -18,7 +18,7 @@ snows = []
 
 
 class Snow:
-    speed = 4
+    speed = 2
     valid = True
 
     def __init__(self, position):

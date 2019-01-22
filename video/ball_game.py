@@ -51,7 +51,7 @@ def remove_invalid_items():
 
 def game_over():
     global is_game_finish, num_lost_ball, total_score
-    # is_game_finish = True
+    is_game_finish = True
     print("Your Score : " + str(total_score))
 
 
