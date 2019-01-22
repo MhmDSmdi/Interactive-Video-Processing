@@ -11,7 +11,7 @@ _, frame = capture.read()
 video_size = frame.shape
 
 fourcc = cv.VideoWriter_fourcc(*'XVID')
-out = cv.VideoWriter('out/fgbg' + str(time.time()) + '.avi', fourcc, 20.0, (640, 480))
+out = cv.VideoWriter('out/object_motion' + str(time.time()) + '.avi', fourcc, 20.0, (640, 480))
 
 balls = []
 

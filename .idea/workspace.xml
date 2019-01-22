@@ -2,107 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f20702e7-9f3a-4e16-a728-0df1de6b91ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/video/ball_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/ball_game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/fgbg_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/fgbg_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/ball_game_2019-01-21-131339.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548064139.063205.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084236.508227.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084261.9713943.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084278.1486177.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084286.3444624.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084314.7761009.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084423.9585142.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084489.304326.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084504.6661925.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084541.134102.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084724.1750104.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084864.2159991.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084904.6523561.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084936.8954806.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548084944.210713.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548085362.4268975.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548085400.7505212.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548085746.341841.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548085762.1926248.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548085772.1086533.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548138576.952645.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548138585.2238922.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548138658.5689428.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548138699.5775235.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/fgbg1548145956.93963.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548144794.385668.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145210.357969.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145311.886924.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145347.259824.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145362.8219366.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145372.1658173.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145395.0952954.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145408.066733.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145421.8414154.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145459.220541.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145506.1864707.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145535.983707.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145540.692177.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145545.9299145.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145549.07265.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145559.3944004.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145612.8903759.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145629.401523.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145635.2364843.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145646.9856539.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145655.6146126.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145662.8660207.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145668.836428.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145704.8262475.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145710.5241606.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145718.9763162.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145795.0582292.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145816.6553972.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145836.9159057.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145979.5115209.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548145993.772408.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146004.5390966.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146018.602278.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146035.788551.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146084.1484666.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146145.7311752.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146221.7476711.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146273.5110044.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146284.433191.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146288.1662204.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146291.0640283.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146293.2492895.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146295.3887305.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146302.8726904.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146436.2380843.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146458.1700573.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146493.8726156.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146595.2185013.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146623.2092073.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146638.1771643.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146690.1953764.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146746.9915051.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146775.7020009.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146809.2517612.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146880.94735.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146892.0600576.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146908.6575792.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146920.904009.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146940.1996784.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146948.27334.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146956.236729.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548146983.2739124.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548147031.290991.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548147042.7609093.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548147051.7997022.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548147064.0110886.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548147068.6665945.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548147094.3213181.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548147109.9751472.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548147113.5054295.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548147118.1490805.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/out/winter1548147122.0315244.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/winter.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/winter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/out/Image_screenshot_20.01.2019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/test.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/image/test.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/object_motion.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/object_motion.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,45 +46,58 @@
         <counts>
           <entry key="gif" value="1" />
           <entry key="jpg" value="12" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="png" value="9" />
-          <entry key="py" value="51" />
+          <entry key="py" value="52" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="22" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="51" />
+          <entry key="Python" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="16" />
-          <entry key="py" value="11241" />
+          <entry key="dummy" value="30" />
+          <entry key="md" value="820" />
+          <entry key="py" value="11254" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="11241" />
+          <entry key="Markdown" value="820" />
+          <entry key="PLAIN_TEXT" value="30" />
+          <entry key="Python" value="11254" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/video/winter.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/video/object_motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="66" />
+            <state relative-caret-position="360">
+              <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1548148889621" expanded="true" signature="1253:1594" ph="..." />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="342">
+                <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -218,6 +135,8 @@
         <option value="$PROJECT_DIR$/video/ball_game.py" />
         <option value="$PROJECT_DIR$/video/fgbg_test.py" />
         <option value="$PROJECT_DIR$/video/winter.py" />
+        <option value="$PROJECT_DIR$/video/object_motion.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -227,7 +146,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="25" />
     <option name="width" value="960" />
     <option name="height" value="1055" />
@@ -251,6 +170,12 @@
               <item name="Image-Processing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Image-Processing" type="462c0819:PsiDirectoryNode" />
               <item name="video" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Image-Processing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Image-Processing" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -328,7 +253,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video/fgbg_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video/object_motion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -434,15 +359,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="25" width="960" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19316968" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.39606127" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49893278" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893278" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,7 +376,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010672" side_tool="true" weight="0.3264865" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49893278" weight="0.3264865" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49893278" visible="true" weight="0.3264865" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Thumbnails" order="13" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -492,14 +417,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1247971763/cv2/cv2/CascadeClassifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -569,16 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/video/fgbg_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
-          <caret line="108" column="29" lean-forward="true" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/video/winter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -587,6 +494,26 @@
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1548148889621" expanded="true" signature="1253:1594" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/object_motion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="342">
+            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
