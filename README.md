@@ -19,16 +19,21 @@ Implementation interactive video using MOG2, KNN function for foreground and bac
 ## Image
 Some low level and high level image processing function tested like:  
 * Edge Detection
+
   ![alt text](./image/out/Edges%20of%20Image.png)
   
 * Smoothing Image using Gaussian kernel
+
   ![alt text](./image/out/Gaussian%20Smoothing.png)
   
 * Rotation, Drawing Image, Resize
+
   ![alt text](./image/out/90_Rotation.png)
 
 * Segmentation 
+
   ![alt text](./image/out/Segmented_Image.png)
   
 * Face Detection
+
   ![alt text](./image/out/FaceImage.png)
