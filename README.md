@@ -1,5 +1,5 @@
 # Image-Processing
-Video and Image Analysing using OpenCV - Python
+Basic Video and Image Analysing using OpenCV - Python
 
 ## Video
 Implementation interactive video using MOG2, KNN function for foreground and background subtracting and other trick for improve accuracy.
